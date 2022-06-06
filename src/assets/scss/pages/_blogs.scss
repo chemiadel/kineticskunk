@@ -1,0 +1,41 @@
+main.main-blogs {
+	padding-bottom: 96px;
+
+	.blogs {
+		&-categories {
+			margin-bottom: 64px;
+			margin-top: -12px;
+
+			ul {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				list-style: none;
+				flex-wrap: wrap;
+
+				li {
+					margin: 12px;
+
+					a {
+						font-size: 16px;
+						line-height: 20px;
+						@include bold;
+						color: #28353D;
+					}
+				}
+			}
+		}
+		&-body {
+			margin-bottom: 16px;
+
+			.col-lg-4 {
+				margin-bottom: 60px;
+			}
+		}
+
+		&-button {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

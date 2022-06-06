@@ -1,0 +1,15 @@
+main.main-partners {
+	padding-bottom: 36px;
+
+	.partners-list {
+		.section-head {
+			margin-bottom: 88px;
+			@include mdq(xs) {
+				margin-bottom: 60px;
+			}
+		}
+		&-body .col-lg-4 {
+			margin-bottom: 60px;
+		}
+	}
+}

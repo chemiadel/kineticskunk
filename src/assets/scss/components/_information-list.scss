@@ -1,0 +1,31 @@
+.information-list {
+	.information-card {
+		&:not(:last-child) {
+			margin-bottom: 96px;
+			@include mdq(xs) {
+				margin-bottom: 60px;
+			}
+		}
+
+		.row {
+			@include mdq(xs-md) {
+				flex-direction: column-reverse !important;
+			}
+		}
+
+		&:nth-child(even) {
+			.row {
+				flex-direction: row-reverse;
+				.col-lg-6 {
+					margin-left: 0;
+					margin-right: auto;
+				}
+			}
+			.information-card-image-triangles {
+				transform: rotate(-180deg);
+				left: -75px;
+				right: auto;
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.section-head {
+	h3 {
+		font-size: 40px;
+		line-height: 58px;
+		@include bold;
+		color: #3D3D3D;
+		text-align: center;
+	}
+	p {
+		margin-top: 24px;
+		font-size: 24px;
+		@include light;
+		color: #28353D;
+		margin-bottom: 0;
+		text-align: center;
+	}
+}

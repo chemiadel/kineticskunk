@@ -1,0 +1,25 @@
+.to-top {
+	display: flex;
+	width: 54px;
+	height: 54px;
+	background-color: $white;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(90deg);
+	border-radius: 50%;
+	position: fixed;
+	right: 78px;
+	bottom: 152px;
+	cursor: pointer;
+	border: 0;
+	border: 1px solid #FF7F20;
+	@include mdq(xs) {
+		right: 15px;
+		bottom: 130px;
+	}
+	&::after {
+		font-family: swiper-icons;
+		content: 'prev';
+		font-weight: 900;
+	}
+}

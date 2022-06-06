@@ -1,0 +1,19 @@
+.resource-list {
+	padding-bottom: 96px;
+	padding-top: 142px;
+
+	.section-head {
+		margin-bottom: 60px;
+		@include mdq(xs) {
+			margin-bottom: 48px;
+		}
+	}
+
+	&-body {
+		.col-lg-6:not(:last-child) {
+			@include mdq(xs-md) {
+				margin-bottom: 48px;
+			}
+		}
+	}
+}

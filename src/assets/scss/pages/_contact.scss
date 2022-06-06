@@ -1,0 +1,159 @@
+main.main-contact + .call-to-action {
+	display: none;
+}
+
+section.contact {
+	background-color: #28353D;
+	padding-top: 96px;
+	padding-bottom: 96px;
+
+	.contact-title {
+		margin-bottom: 60px;
+		text-align: center;
+		@include mdq(xs) {
+			margin-bottom: 96px;
+		}
+
+		h1 {
+			font-size: 48px;
+			line-height: 58px;
+			@include bold;
+			color: $white;
+			@include mdq(xs) {
+				font-size: 40px;
+				line-height: 40px;
+			}
+		}
+	}
+
+	.contact-body {
+		h5 {
+			font-size: 24px;
+			line-height: 24px;
+			@include bold;
+			color: $white;
+			margin-bottom: 24px;
+		}
+
+		&-form {
+			@include mdq(xs-md) {
+				margin-bottom: 96px;
+			}
+
+			.btn:hover {
+				background-color: $white;
+				color: #28353D;
+			}
+		}
+
+		&-information {
+			background-color: rgba($white, .1);
+			padding: 60px;
+			@include mdq(xs) {
+				padding: 40px 30px;
+			}
+
+			&-item {
+				&:not(:last-child) {
+					margin-bottom: 64px;
+					padding-bottom: 64px;
+					border-bottom: 1px solid $white;
+					@include mdq(xs) {
+						margin-bottom: 40px;
+						padding-bottom: 40px;
+					}
+				}
+
+				&-title {
+					margin-bottom: 24px;
+					h5 {
+						font-size: 24px;
+						@include bold;
+						color: $white;
+						line-height: 24px;
+						text-align: center;
+					}
+				}
+
+				&-body {
+					a {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 16px;
+						@include bold;
+						color: $white;
+						line-height: 20px;
+						text-decoration: none;
+
+						i {
+							display: flex;
+							width: 24px;
+							height: 24px;
+							margin-right: 24px;
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: contain;
+								object-position: center;
+							}
+						}
+					}
+				}
+			}
+			// &-item {
+			// 	&:not(:last-child) {
+			// 		margin-bottom: 72px;
+			// 	}
+
+			// 	&-communication {
+			// 		&-item {
+			// 			&:not(:last-child) {
+			// 				margin-bottom: 36px;
+			// 			}
+
+			// 			a {
+			// 				display: flex;
+			// 				align-items: center;
+			// 				font-size: 16px;
+			// 				line-height: 20px;
+			// 				@include bold;
+			// 				color: $white;
+
+			// 				i {
+			// 					display: flex;
+			// 					margin-right: 40px;
+
+			// 					img {
+			// 						width: 32px;
+			// 						height: 32px;
+			// 						object-fit: contain;
+			// 						object-position: center;
+			// 					}
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+
+			// 	&-social {
+			// 		ul {
+			// 			display: flex;
+			// 			align-items: center;
+			// 			list-style: none;
+			// 			li {
+			// 				&:not(:last-child) {
+			// 					margin-right: 15px;
+			// 				}
+			// 				img {
+			// 					width: 32px;
+			// 					height: 32px;
+			// 					object-fit: contain;
+			// 					object-position: center;
+			// 				}
+			// 			}
+			// 		}
+			// 	}
+			// }
+		}
+	}
+}

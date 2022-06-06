@@ -1,0 +1,38 @@
+main.main-resource {
+	padding-bottom: 96px;
+}
+
+.resource {
+	&-item {
+		&:not(:last-child) {
+			margin-bottom: 96px;
+		}
+
+		&-title {
+			margin-bottom: 48px;
+
+			h5 {
+				font-size: 40px;
+				line-height: 58px;
+				@include bold;
+				color: #3D3D3D;
+				text-align: center;
+			}
+		}
+
+		&-body {
+			margin-bottom: 48px;
+
+			.col-lg-4:not(:last-child) {
+				@include mdq(xs-md) {
+					margin-bottom: 48px;
+				}
+			}
+		}
+
+		&-button {
+			display: flex;
+			justify-content: center;
+		}
+	}
+}

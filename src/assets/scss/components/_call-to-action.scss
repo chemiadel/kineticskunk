@@ -1,0 +1,49 @@
+.call-to-action {
+	padding: 115px 0;
+	background-color: #28353D;
+	@include mdq(xs) {
+		padding: 60px 0;
+	}
+
+	.btn:hover {
+		background-color: $white;
+		color: #28353D;
+	}
+
+	.row {
+		margin-left: -8px;
+		margin-right: -8px;
+		.col-6, .col-lg-5, .col-lg-12 {
+			padding-left: 6px;
+			padding-right: 6px;
+		}
+	}
+
+	&-body {
+		@include mdq(xs-md) {
+			margin-bottom: 60px;
+		}
+		h3 {
+			font-size: 40px;
+			font-size: 58px;
+			color: $white;
+			@include bold;
+			margin-bottom: 24px;
+		}
+
+		p {
+			font-size: 24px;
+			line-height: 30px;
+			@include regular;
+			color: $white;
+			margin-bottom: 24px;
+		}
+	}
+
+	&-form {
+		.btn {
+			height: 52px;
+			font-size: 15px;
+		}
+	}
+}

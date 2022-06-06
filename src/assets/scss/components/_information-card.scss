@@ -1,0 +1,75 @@
+.information-card {
+	.row:hover {
+		.information-card-image-triangles svg path {
+			&:nth-child(1) {
+				transform: translateY(5px);
+			}
+			&:nth-child(2) {
+				transform: translateY(-5px);
+			}
+			&:nth-child(3) {
+				transform: translateY(-5px);
+			}
+		}
+	}
+
+	.col-lg-6 {
+		margin-left: auto;
+	}
+	
+	&-body {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+
+		h4 {
+			font-size: 40px;
+			line-height: 40px;
+			@include bold;
+			color: #28353D;
+			margin-bottom: 24px;
+		}
+
+		p {
+			font-size: 16px;
+			line-height: 20px;
+			@include light;
+			color: #28353D;
+			margin-bottom: 24px;
+		}
+	}
+
+	&-image {
+		width: 100%;
+		height: 400px;
+		position: relative;
+		@include mdq(xs-md) {
+			margin-bottom: 48px;
+		}
+		@include mdq(xs) {
+			height: 250px;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		&-triangles {
+			position: absolute;
+			bottom: -25px;
+			right: -75px;
+			display: flex;
+			@include mdq(xs-md) {
+				display: none;
+			}
+			path {
+				transition: .5s transform;
+			}
+		}
+	}
+}
